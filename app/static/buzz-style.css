@@ -1,0 +1,93 @@
+:root {
+   --primary-100: #FF3333;
+   --primary-200: #ff6e5e;
+   --primary-300: #ffdabd;
+   --accent-100: #FF6666;
+   --accent-200: #8f0015;
+   --text-100: #FFFFFF;
+   --text-200: #e0e0e0;
+   --bg-100: #1A1A1A;
+   --bg-200: #292929;
+   --bg-300: #404040;
+
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+}
+
+body {
+   background-color: var(--bg-300);
+   color: var(--text-100);
+}
+
+header {
+   width: 100%;
+   background-color: var(--bg-200);
+   height: 80px;
+   padding: 1rem;
+   color: var(--text-100);
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+header a{
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   font-weight: bold;
+}
+header select {
+   padding: 12px 6px;
+   border-radius: 12px;
+}
+
+
+/* MANDOS */
+.controller {
+   display: flex;
+   flex-flow: column nowrap;
+   align-items: center;
+   padding: 2em 2em 6em;
+   border: 2px var(--primary-100) dashed;
+   border-radius: 200px 200px 180px 180px;
+   font-weight: bold;
+}
+
+.controller button {
+   font-weight: bold;
+   font-size: medium;
+}
+
+.controller h2 {
+   font-size: 1.5em;
+}
+
+main {
+   display: flex;
+   flex-flow: row nowrap;
+   align-items: start;
+   justify-content: center;
+   padding: 2rem;
+   gap: 5em;
+}
+
+.buzz {
+   width: 170px;
+   aspect-ratio: 1/1;
+   border: 3px solid black;
+   border-radius: 100%;
+   margin-bottom: 1em;
+}
+
+.buzz-option {
+   width: 170px;
+   aspect-ratio: 6/2;
+   border: 3px solid black;
+   border-radius: 12px;
+   margin-bottom: 1em;
+}

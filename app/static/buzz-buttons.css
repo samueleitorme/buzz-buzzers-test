@@ -1,0 +1,40 @@
+/* Botones buzz */
+.red-buzz {
+   background-color: #f23e2f;
+}
+
+.red-buzz:active {
+   background-color: #f23e2faa;
+}
+
+.blue-buzz {
+   background-color: #029be0;
+}
+
+.blue-buzz:active {
+   background-color: #029be0aa;
+}
+
+.orange-buzz {
+   background-color: #ffa538;
+}
+
+.orange-buzz:active {
+   background-color: #ffa538aa;
+}
+
+.green-buzz {
+   background-color: #00b75a;
+}
+
+.green-buzz:active {
+   background-color: #00b75aaa;
+}
+
+.yellow-buzz {
+   background-color: #fcf481;
+}
+
+.yellow-buzz:active {
+   background-color: #fcf481aa;
+}
