@@ -1,31 +1,43 @@
+// Variable para almacenar el índice del controlador
 let controllerIndex = null;
-const conexinoDiv = document.getElementById('estado-conexion');
+
+// Elemento del DOM para mostrar el estado de la conexión
+const connectionStatusText = document.getElementById("estado-conexion");
 
 window.addEventListener("gamepadconnected", (event) => {
   const gamepad = event.gamepad;
   controllerIndex = gamepad.index;
-  const msgConectado = "✅Buzz Conectado";
-  console.log('%c%s', 'font-size: 20px; color: #00d26a; font-weight:bold', msgConectado);
+  updateConnectionStatus(true);
+  // const msgConectado = "✅ Buzz Conectado";
 });
 
+// Evento para cuando se desconecta un controlador
 window.addEventListener("gamepaddisconnected", (event) => {
   controllerIndex = null;
-  const msgDesconectado = "❌Buzz Desconectado";
-  console.log('%c%s', 'font-size: 20px; color: #f92f60; font-weight:bold', msgDesconectado);
+  updateConnectionStatus(false);
+  // const msgDesconectado = "❌ Buzz Desconectado";
 });
 
-
+function updateConnectionStatus(connected) {
+  if (connected) {
+    connectionStatusText.innerText = "✅ Buzz Conectado";
+    connectionStatusText.style.color = "#00d26a";
+  } else {
+    connectionStatusText.innerText = "❌ Buzz Desconectado";
+    connectionStatusText.style.color = "#f92f60";
+  }
+}
+// Función para manejar los botones del controlador
 function handleButtons(buttons) {
+  const selectedButtonClass = "selected-button";
   for (let i = 0; i < buttons.length; i++) {
     const button = buttons[i];
     const buttonElement = document.getElementById(`controller-b${i}`);
-    const selectedButtonClass = "selected-button";
-    
 
     if (buttonElement) {
-      if (button.value > 0) {
+      if (button.pressed) {
+        // Cambiado a button.pressed para verificar si el botón está presionado
         buttonElement.classList.add(selectedButtonClass);
-        console.log(buttonElement)
       } else {
         buttonElement.classList.remove(selectedButtonClass);
       }
@@ -33,12 +45,18 @@ function handleButtons(buttons) {
   }
 }
 
+// Función que se ejecuta en un ciclo para actualizar los botones del controlador
 function gameLoop() {
   if (controllerIndex !== null) {
     const gamepad = navigator.getGamepads()[controllerIndex];
-    handleButtons(gamepad.buttons);
+    if (gamepad) {
+      handleButtons(gamepad.buttons);
+    }
   }
   requestAnimationFrame(gameLoop);
 }
 
+// Evento para cuando se conecta un controlador
+
+// Iniciar el ciclo de juego
 gameLoop();
