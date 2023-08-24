@@ -6,14 +6,12 @@ window.addEventListener("gamepadconnected", (event) => {
   controllerIndex = gamepad.index;
   const msgConectado = "✅Buzz Conectado";
   console.log('%c%s', 'font-size: 20px; color: #00d26a; font-weight:bold', msgConectado);
-  conexinoDiv.innerHTML += msgConectado;
 });
 
 window.addEventListener("gamepaddisconnected", (event) => {
   controllerIndex = null;
   const msgDesconectado = "❌Buzz Desconectado";
   console.log('%c%s', 'font-size: 20px; color: #f92f60; font-weight:bold', msgDesconectado);
-  conexinoDiv.innerHTML += msgDesconectado;
 });
 
 
