@@ -6,9 +6,9 @@
    --accent-200: #8f0015;
    --text-100: #FFFFFF;
    --text-200: #e0e0e0;
-   --bg-100: #1A1A1A;
-   --bg-200: #292929;
-   --bg-300: #404040;
+   --bg-100: #292929;
+   --bg-200: #404040;
+   --bg-300: #505050;
 
 }
 
@@ -17,6 +17,7 @@
    margin: 0;
    padding: 0;
    font-family: sans-serif;
+   text-decoration: none;
 }
 
 body {
@@ -26,7 +27,7 @@ body {
 
 header {
    width: 100%;
-   background-color: var(--bg-200);
+   background-color: var(--bg-100);
    height: 80px;
    padding: 1rem;
    color: var(--text-100);
@@ -41,7 +42,7 @@ header a{
    gap: 8px;
    font-weight: bold;
 }
-header select {
+header button {
    padding: 12px 6px;
    border-radius: 12px;
 }
@@ -56,6 +57,7 @@ header select {
    border: 2px var(--primary-100) dashed;
    border-radius: 200px 200px 180px 180px;
    font-weight: bold;
+   background-color: var(--bg-200);
 }
 
 .controller button {
@@ -90,4 +92,24 @@ main {
    border: 3px solid black;
    border-radius: 12px;
    margin-bottom: 1em;
+}
+
+footer{
+   height: 5vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--bg-100);
+}
+
+footer *{
+   color: var(--text-100);
+   text-decoration: none;
+}
+footer a{
+   font-style: italic;
+}
+footer a:hover{
+   color: var(--primary-200);
+   transition: .5s ease-in-out;
 }

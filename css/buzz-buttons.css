@@ -1,6 +1,7 @@
 /* Botones buzz */
 .red-buzz {
    background-color: #f23e2f;
+   opacity: .5;
 }
 
 .red-buzz:active {
@@ -9,14 +10,17 @@
 
 .blue-buzz {
    background-color: #029be0;
+   opacity: .5;
 }
 
 .blue-buzz:active {
    background-color: #029be0aa;
+   opacity: .5;
 }
 
 .orange-buzz {
    background-color: #ffa538;
+   opacity: .5;
 }
 
 .orange-buzz:active {
@@ -25,6 +29,7 @@
 
 .green-buzz {
    background-color: #00b75a;
+   opacity: .5;
 }
 
 .green-buzz:active {
@@ -33,8 +38,17 @@
 
 .yellow-buzz {
    background-color: #fcf481;
+   opacity: .5;
 }
 
 .yellow-buzz:active {
    background-color: #fcf481aa;
+}
+.selected-button {
+   opacity: 1;
+   color: white;
+   transition: .2s ease-out;
+}
+:not(.selected-button){
+   transition: .5s ease-out;
 }
