@@ -1,20 +1,15 @@
 /* Botones buzz */
+.buzz-option:active, .buzz:active {
+   opacity: 1;
+}
+
 .red-buzz {
    background-color: #f23e2f;
    opacity: .5;
 }
 
-.red-buzz:active {
-   background-color: #f23e2faa;
-}
-
 .blue-buzz {
    background-color: #029be0;
-   opacity: .5;
-}
-
-.blue-buzz:active {
-   background-color: #029be0aa;
    opacity: .5;
 }
 
@@ -23,17 +18,9 @@
    opacity: .5;
 }
 
-.orange-buzz:active {
-   background-color: #ffa538aa;
-}
-
 .green-buzz {
    background-color: #00b75a;
    opacity: .5;
-}
-
-.green-buzz:active {
-   background-color: #00b75aaa;
 }
 
 .yellow-buzz {
@@ -41,14 +28,12 @@
    opacity: .5;
 }
 
-.yellow-buzz:active {
-   background-color: #fcf481aa;
-}
 .selected-button {
    opacity: 1;
    color: white;
    transition: .2s ease-out;
 }
-:not(.selected-button){
+
+:not(.selected-button) {
    transition: .5s ease-out;
 }
