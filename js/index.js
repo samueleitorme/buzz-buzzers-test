@@ -20,10 +20,10 @@ window.addEventListener("gamepaddisconnected", (event) => {
 
 function updateConnectionStatus(connected) {
   if (connected) {
-    connectionStatusText.innerText = "✅ Buzz Conectado";
+    connectionStatusText.innerText = "✅ Buzz Connected";
     connectionStatusText.style.color = "#00d26a";
   } else {
-    connectionStatusText.innerText = "❌ Buzz Desconectado";
+    connectionStatusText.innerText = "❌ Buzz Disconnected";
     connectionStatusText.style.color = "#f92f60";
   }
 }
@@ -56,7 +56,20 @@ function gameLoop() {
   requestAnimationFrame(gameLoop);
 }
 
-// Evento para cuando se conecta un controlador
 
 // Iniciar el ciclo de juego
 gameLoop();
+
+// NOTA DEL AUTOR
+let note = '%cMade by Samueleitor.me 🧑🏽‍💻'
+let style = [
+  'font: bold 2rem/4 sans-serif',
+  'color:black',
+  'padding:20px',
+  'background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);'
+].join(';')
+console.group("AUTHOR'S NOTE");
+console.info(note,style);
+console.info('WEBSITE: https://samueleitor.me');
+console.info('GITHUB: https://samueleitor.me/github');
+console.groupEnd();
