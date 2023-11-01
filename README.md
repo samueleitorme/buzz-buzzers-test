@@ -49,4 +49,4 @@ Este proyecto es solo una herramienta de diagnóstico y prueba.
 
 ## Licencia
 
-Este proyecto está bajo la Licencia [MIT](LICENSE).
+Este proyecto está bajo la Licencia [GPLv3](./LICENSE).
