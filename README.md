@@ -1,6 +1,6 @@
 # Buzz Buzzers Test
 
-![Buzz Buzzers](./.readme/cover-image.png)
+![Buzz Buzzers](./media/cover-image.png)
 
 Buzz Buzzers Test es una herramienta simple para comprobar el funcionamiento de los mandos de Buzz utilizando una conexión USB. 
 Los mandos de Buzz son controladores de trivia y buzzer utilizados en juegos interactivos. 
@@ -33,10 +33,10 @@ Este proyecto proporciona una manera fácil y rápida de verificar si los mandos
 
 ## Capturas de pantalla
 
-![Captura 1](./.readme/Buzz-Connected.png)
+![Captura 1](./media/Buzz-Connected.png)
 > Interfaz de usuario mostrando la detección exitosa de un mando de Buzz.
 
-![Captura 2](./.readme/Buzz-Disconnected.png)
+![Captura 2](./media/Buzz-Disconnected.png)
 > Interfaz de usuario sin detección después de presionar los botones del mando de Buzz.
 
 ## Contribución
@@ -45,14 +45,8 @@ Las contribuciones son bienvenidas y pueden realizarse a través de solicitudes 
 
 ## Notas
 
-Este proyecto es solo una herramienta de diagnóstico y prueba. No ofrece funcionalidades de juego ni interacción completa con los mandos de Buzz.
+Este proyecto es solo una herramienta de diagnóstico y prueba.
 
 ## Licencia
 
 Este proyecto está bajo la Licencia [MIT](LICENSE).
-
----
-
-**Descargo de responsabilidad:** Buzz Buzzers Test es un proyecto independiente y no está afiliado ni respaldado por los fabricantes de los mandos de Buzz.
-
-¡Gracias por usar Buzz Buzzers Test! Si tienes alguna pregunta, problema o sugerencia, no dudes en crear un problema en el repositorio.
