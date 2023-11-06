@@ -27,12 +27,23 @@ body {
 header {
    width: 100%;
    height: 80px;
-   padding: 1rem;
+   padding: 1rem 4rem;
    display: flex;
    align-items: center;
    justify-content: space-between;
    background-color: var(--bg-100);
    color: var(--text-100);
+}
+.favicon {
+   display: flex;
+   gap: 18px;
+}
+.favicon img{
+   flex-flow: row nowrap;
+   width: 32px;
+}
+.favicon h1{
+   font-size: 2rem;
 }
 
 header a {
@@ -46,7 +57,8 @@ header a {
    border-radius: 12px;
    padding: 1rem;
 }
-header a:hover{
+
+header a:hover {
    background-color: var(--text-100);
    color: var(--bg-100);
 }
@@ -56,12 +68,12 @@ header button {
    border-radius: 12px;
 }
 
-.connection-status{
+.connection-status {
    display: flex;
    align-items: center;
    justify-content: center;
-   margin: 1em;
-   font-size: 2em;
+   margin: 1rem;
+   font-size: 2rem;
    transition: .2s ease-in;
 }
 
@@ -70,7 +82,7 @@ header button {
    display: flex;
    flex-flow: column nowrap;
    align-items: center;
-   padding: 2em 2em 6em;
+   padding: 2rem 2rem 6rem;
    border: 2px var(--primary-100) dashed;
    border-radius: 200px 200px 180px 180px;
    font-weight: bold;
@@ -83,16 +95,18 @@ header button {
 }
 
 .controller h2 {
-   font-size: 1.5em;
+   font-size: 1.5rem;
 }
 
 main {
+   height: 80hv;
+}
+
+main section {
    display: flex;
-   flex-flow: row nowrap;
-   align-items: center;
    justify-content: center;
-   margin: 100px;
-   gap: 5em;
+   align-items: center;
+   gap: 1rem;
 }
 
 .buzz {
@@ -112,6 +126,10 @@ main {
 }
 
 footer {
+   position: absolute;
+   overflow: hidden;
+   bottom: 0;
+   width: 100%;
    height: 48px;
    display: flex;
    align-items: center;
@@ -132,4 +150,23 @@ footer a {
 footer a:hover {
    color: var(--primary-200);
    transition: .5s ease-in-out;
+}
+
+@media screen and (max-width:680px) {
+   header{
+      padding: 1rem;
+   }
+   .favicon h1{
+      font-size: 1.5rem;
+   }
+   main{
+      visibility: hidden;
+      transition: none;
+   }
+   main::after{
+      content: "Please go full screen.";
+   }
+   footer{
+      width: 100vw;
+   }
 }
