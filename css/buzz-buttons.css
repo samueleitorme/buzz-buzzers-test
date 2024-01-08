@@ -1,39 +1,81 @@
+:root {
+   --buzz-red: #f23e2f;
+   --buzz-blue: #029be0;
+   --buzz-orange: #ff9838;
+   --buzz-green: #00b75a;
+   --buzz-yellow: #ffd83c;
+}
+
 /* Botones buzz */
-.buzz-option:active, .buzz:active {
+.buzz-option:active,
+.buzz:active {
    opacity: 1;
+   color: white;
+   text-shadow: 0 0 5px black;
 }
 
+/* ROJO */
 .red-buzz {
-   background-color: #f23e2f;
-   opacity: .5;
+   background-color: var(--buzz-red);
+   opacity: .75;
 }
 
+.red-buzz.selected-button,
+.red-buzz:active {
+   box-shadow: 0 0 2rem .7rem var(--buzz-red);
+}
+
+/* AZUL */
 .blue-buzz {
-   background-color: #029be0;
-   opacity: .5;
+   background-color: var(--buzz-blue);
+   opacity: .75;
 }
 
+.blue-buzz.selected-button,
+.blue-buzz:active {
+   box-shadow: 0 0 2rem .7rem var(--buzz-blue);
+}
+
+/* NARANJA */
 .orange-buzz {
-   background-color: #ffa538;
-   opacity: .5;
+   background-color: var(--buzz-orange);
+   opacity: .75;
 }
 
+.orange-buzz.selected-button,
+.orange-buzz:active {
+   box-shadow: 0 0 2rem .7rem var(--buzz-orange);
+}
+
+/* VERDE */
 .green-buzz {
-   background-color: #00b75a;
-   opacity: .5;
+   background-color: var(--buzz-green);
+   opacity: .75;
 }
 
+.green-buzz.selected-button,
+.green-buzz:active {
+   box-shadow: 0 0 2rem .7rem var(--buzz-green);
+}
+
+/* AMARILLO */
 .yellow-buzz {
-   background-color: #fcf481;
-   opacity: .5;
+   background-color: var(--buzz-yellow);
+   opacity: .75;
+}
+
+.yellow-buzz.selected-button,
+.yellow-buzz:active {
+   box-shadow: 0 0 2rem .7rem var(--buzz-yellow);
 }
 
 .selected-button {
    opacity: 1;
    color: white;
    transition: .2s ease-out;
+   transform: scale(105%);
 }
 
-:not(.selected-button) {
+.buzz-controllers :not(.selected-button) {
    transition: .3s ease-out;
 }

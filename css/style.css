@@ -1,0 +1,167 @@
+:root {
+   color-scheme: dark;
+   --shamrock-50: #eefbf6;
+   --shamrock-100: #d7f4e7;
+   --shamrock-200: #b2e8d2;
+   --shamrock-300: #66cdaa;
+   --shamrock-400: #4bbc99;
+   --shamrock-500: #29a080;
+   --shamrock-600: #1a8167;
+   --shamrock-700: #156755;
+   --shamrock-800: #135244;
+   --shamrock-900: #104439;
+   --shamrock-950: #082621;
+
+   --darkbg-100: #18181b;
+   --darkbg-200: #28282b;
+   --darkbg-300: #38383b;
+   --darktext: #fafaff;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Inter', 'Manrope', 'Geist Variable', sans-serif;
+   text-decoration: none;
+   color: var(--darktext);
+}
+
+body {
+   background-color: var(--darkbg-200);
+}
+
+header {
+   padding: 1rem 5rem;
+   background-color: var(--darkbg-100);
+
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+div.favicon,
+a.github-repo {
+   stroke: var(--darktext);
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   font-weight: bold;
+}
+
+a.github-repo {
+   color: var(--darktext);
+   background-color: transparent;
+   border: var(--shamrock-300) 2px solid;
+   padding: 1rem 2rem;
+   border-radius: .5rem;
+   transition: .3s ease;
+}
+
+a.github-repo:hover {
+   background-color: var(--shamrock-900);
+}
+
+/* MAIN */
+main {
+   padding: 2rem 2rem 0 2rem;
+}
+
+.div__estado {
+   text-align: center;
+   margin: 1rem 0;
+   font-size: 1.25rem;
+}
+
+.disp-movil {
+   padding: 2rem;
+   text-align: left;
+   text-wrap: pretty;
+   font-size: 1.75rem;
+   display: none;
+}
+
+
+.buzz-controllers {
+   user-select: none;
+
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-evenly;
+   gap: 1.75rem 1.125rem;
+}
+
+.controller {
+   padding: 2rem;
+   border-radius: 10rem 10rem 7.5rem 7.5rem;
+   /* border: var(--shamrock-800) dashed 3px; */
+   background-color: var(--darkbg-300);
+   box-shadow: 4px 4px 15px 20px #2222221a;
+
+
+   display: flex;
+   flex-flow: column nowrap;
+   align-items: center;
+   gap: 1.25rem;
+
+}
+
+.controller>button {
+   width: 100%;
+   border: .25rem solid black;
+   color: var(--darkbg-100);
+   font-size: 1.125rem;
+   font-weight: 700;
+}
+
+.controller>.buzz {
+   aspect-ratio: 1/1;
+   border-radius: 9999px;
+   margin-bottom: 1.5rem;
+   font-size: 1.75rem;
+}
+
+.buzz-option {
+   border-radius: 0.5rem;
+   padding: 1.125rem 6rem;
+}
+
+.controller>h2 {
+   margin: 1.5rem 0;
+}
+
+footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   margin: 4rem;
+}
+
+@media (width <=700px) {
+
+   /* HEADER */
+   header {
+      flex-flow: column nowrap;
+      gap: 1rem;
+      padding: 2rem 1rem;
+   }
+
+   header .favicon {
+      display: flex;
+      flex-flow: column nowrap;
+   }
+
+   h1 {
+      font-size: 1.5rem;
+   }
+
+   .disp-movil {
+      display: block;
+   }
+
+   .buzz-controllers {
+      display: none;
+   }
+}
