@@ -2,22 +2,48 @@
 <html lang="es">
 
 <head>
+
+   <!-- Primary Meta Tags -->
+   <title>Buzz! Mandos PS2 y PS3. Testea.</title>
+   <meta name="title" content="Buzz! Mandos PS2 y PS3. Testea." />
+   <meta name="description"
+      content="Con esta aplicación puedes detectar los mandos que no funcionan y así poder arreglarlos. " />
+
+   <!-- Open Graph / Facebook -->
+   <meta property="og:type" content="website" />
+   <meta property="og:url" content="https://buzz.samueleitor.me" />
+   <meta property="og:title" content="Buzz! Mandos PS2 y PS3. Testea." />
+   <meta property="og:description"
+      content="Con esta aplicación puedes detectar los mandos que no funcionan y así poder arreglarlos. " />
+   <meta property="og:image" content="./media/cover-image_es.png" />
+
+   <!-- Twitter -->
+   <meta property="twitter:card" content="summary_large_image" />
+   <meta property="twitter:url" content="https://buzz.samueleitor.me" />
+   <meta property="twitter:title" content="Buzz! Mandos PS2 y PS3. Testea." />
+   <meta property="twitter:description"
+      content="Con esta aplicación puedes detectar los mandos que no funcionan y así poder arreglarlos. " />
+   <meta property="twitter:image" content="./media/cover-image_es.png" />
+   <!-- Meta Tags Generated with https://metatags.io -->
+
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Buzz! Buzzers Test Controller</title>
-   <meta name="description" content="Tester your Buzz! Buzzers Controller with this tool. Check the buttons.">
-   <link rel="stylesheet" href="css/buzz-style.css">
-   <link rel="stylesheet" href="css/buzz-buttons.css">
-   <link rel="shortcut icon" href="media/favicon.svg" type="image/x-icon">
+   <!-- CSS -->
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/buzz-buttons.css">
+   <link rel="shortcut icon" href="./media/favicon.svg" type="image/x-icon">
+   <!-- Font -->
+   <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet" />
 </head>
 
 <body>
    <header>
       <div class="favicon">
-         <img src="media/favicon.svg" alt="Buzz Buzzers Test Favicon">
+         <img src="./media/favicon.svg" width="48px" alt="Buzz Buzzers Test Favicon">
          <h1>Buzz! Buzzers Test Controller</h1>
       </div>
-      <a href="http://github.com/samueleitorme/buzz-buzzers-test">
+      <a href="http://github.com/samueleitorme/buzz-buzzers-test" class="github-repo" target="_blank">
          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24"
             height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
             stroke-linejoin="round">
@@ -25,23 +51,21 @@
             <path
                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5">
             </path>
-         </svg>
-         Github Repository
+         </svg>Repositorio
       </a>
    </header>
-   <div class="connection-status">
-      <h3 id="estado-conexion"></h3>
-   </div>
    <main>
-      <section>
-
+      <div class="div__estado">
+         <h3 id="estado-conexion"></h3>
+      </div>
+      <div class="buzz-controllers">
          <div class="controller ">
             <button id="controller-b0" class="buzz red-buzz">Buzz! &TRADE;</button>
             <button id="controller-b4" class="buzz-option blue-buzz">Blue</button>
             <button id="controller-b3" class="buzz-option orange-buzz">Orange</button>
             <button id="controller-b2" class="buzz-option green-buzz">Green</button>
             <button id="controller-b1" class="buzz-option yellow-buzz">Yellow</button>
-            <h2>Player 1</h2>
+            <h2>Jugador 1</h2>
          </div>
          <div class="controller ">
             <button id="controller-b5" class="buzz red-buzz">Buzz! &TRADE;</button>
@@ -49,7 +73,7 @@
             <button id="controller-b8" class="buzz-option orange-buzz">Orange</button>
             <button id="controller-b7" class="buzz-option green-buzz">Green</button>
             <button id="controller-b6" class="buzz-option yellow-buzz">Yellow</button>
-            <h2>Player 2</h2>
+            <h2>Jugador 2</h2>
          </div>
          <div class="controller">
             <button id="controller-b10" class="buzz red-buzz">Buzz! &TRADE;</button>
@@ -57,7 +81,7 @@
             <button id="controller-b13" class="buzz-option orange-buzz">Orange</button>
             <button id="controller-b12" class="buzz-option green-buzz">Green</button>
             <button id="controller-b11" class="buzz-option yellow-buzz">Yellow</button>
-            <h2>Player 3</h2>
+            <h2>Jugador 3</h2>
          </div>
          <div class="controller ">
             <button id="controller-b15" class="buzz red-buzz">Buzz! &TRADE;</button>
@@ -65,15 +89,16 @@
             <button id="controller-b18" class="buzz-option orange-buzz">Orange</button>
             <button id="controller-b17" class="buzz-option green-buzz">Green</button>
             <button id="controller-b16" class="buzz-option yellow-buzz">Yellow</button>
-            <h2>Player 4</h2>
+            <h2>Jugador 4</h2>
          </div>
-      </section>
+      </div>
+      <div class="disp-movil">
+         <p>Utiliza un ordenador o un portátil para poder utilizar la app.</p>
+      </div>
    </main>
    <footer>
-      <a href="https://www.paypal.me/samueleitorme" target="_blank" class="donate-link">Buy me a coffe ☕</a>
-      <a class="copyright" target="_blank" href="https://samueleitor.me">© 2023 Samueleitor.me</a>
+      <p>Hecho con 💖 por <a href="https://samueleitor.me/">@samueleitorme</a>.</p>
    </footer>
-
    <script src="js/index.js"></script>
 </body>
 
